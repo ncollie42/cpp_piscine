@@ -4,14 +4,12 @@
 
 class phonebook {
     public:
-        contact list[8];
         phonebook( void );
-        ~phonebook( void );
         void add();
         void search();
     private:
-        int total;
-
+        contact _list[8];
+        int     _total;
 };
 
 #endif

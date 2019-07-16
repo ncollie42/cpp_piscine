@@ -7,10 +7,9 @@ void prompt(void)
     << "Commands:\n"
     << "\t  ADD\n"
     << "\t  SEARCH\n"
-    << "\t EXIT\n"
+    << "\t  EXIT\n"
     << "***************************\n" << std::endl;
 }
-
 
 int main()
 {
@@ -29,10 +28,6 @@ int main()
         else if (!command.compare("EXIT"))
             exit(EXIT_SUCCESS);
         else
-        {
             std::cout << "invalid command! =c" << std::endl;
-            fflush(stdin);
-        }
     }
-    
 }
