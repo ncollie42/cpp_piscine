@@ -8,7 +8,7 @@ int main(int argc, char **argv)
         while (n < argc)
         {
             std::string tmp = argv[n++];
-            for (int n = 0; n < tmp.length(); n++)
+            for (unsigned long n = 0; n < tmp.length(); n++)
                 std::cout << (char)toupper(tmp[n]);
         }
     else

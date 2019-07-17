@@ -1,8 +1,10 @@
 CC = g++
 FILES = main.cpp \
-Pony.cpp 
-NAME = test
-FLAGS = -Wall -Werror -Wextra 
+Zombie.cpp \
+ZombieEvent.cpp
+NAME = zombie
+FLAGS = -g
+# -Wall -Werror -Wextra 
 all: $(NAME)
 
 $(NAME): $(FILES)
@@ -10,4 +12,3 @@ $(NAME): $(FILES)
 
 clean:
 	rm $(NAME)
-

@@ -103,7 +103,7 @@ bool	Account::makeWithdrawal( int withdrawal )
 
 int		Account::checkAmount( void ) const
 {
-    return ∫_amount;
+    return _amount;
 }
 
 void	Account::displayStatus( void ) const

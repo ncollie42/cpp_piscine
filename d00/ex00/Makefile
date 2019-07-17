@@ -7,7 +7,7 @@ NAME = megaphone
 all: $(NAME)
 
 $(NAME): $(FILES)
-	$(CC) $(CPP_STUFF) $(FILES) -o $@
+	$(CC) $(CPP_STUFF) $(FILES) -o $@ $(FLAGS)
 
 clean:
 	@rm $(NAME)
