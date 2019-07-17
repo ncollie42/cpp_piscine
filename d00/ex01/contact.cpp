@@ -74,8 +74,8 @@ void contact::full_print( void )
     std::cout << "Phone number: " << this->phone << "\n";
     std::cout << "Birthday: " << this->birthday << "\n";
     std::cout << "Favorite meal: " << this->favorite_meal << "\n";
-    std::cout << "Underwear color" << this->underwear_color<< "\n";
-    std::cout << "Darkest secret" << this->darkest_secret << "\n";
+    std::cout << "Underwear color: " << this->underwear_color<< "\n";
+    std::cout << "Darkest secret: " << this->darkest_secret << "\n";
 }
 
 
