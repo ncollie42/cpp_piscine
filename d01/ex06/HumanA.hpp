@@ -2,11 +2,15 @@
 #define HUMANA_H
 #include "Weapon.hpp"
 
-class HumanB
+class HumanA
 {
-    public:
+     public:
+        void attack( void );
+        HumanA( std::string name, Weapon &wep);
+        void setWeapon( Weapon web);
     private:
-        std::string name;
+        std::string _name;
+        Weapon &_wep;
 };
 
 #endif
