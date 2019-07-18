@@ -3,12 +3,13 @@
 void prompt(void)
 {
     std::cout << "***************************\n"
-    << "PHONEBOOK\n"
-    << "Commands:\n"
-    << "\t  ADD\n"
-    << "\t  SEARCH\n"
-    << "\t  EXIT\n"
-    << "***************************\n" << std::endl;
+              << "PHONEBOOK\n"
+              << "Commands:\n"
+              << "\t  ADD\n"
+              << "\t  SEARCH\n"
+              << "\t  EXIT\n"
+              << "***************************\n"
+              << std::endl;
 }
 
 int main()
@@ -16,7 +17,7 @@ int main()
     phonebook phonebook;
 
     prompt();
-    while(true)
+    while (!std::cin.eof())
     {
         std::string command;
         std::cout << ">> ";

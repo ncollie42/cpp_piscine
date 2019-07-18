@@ -1,7 +1,7 @@
 #include "phonebook.hpp"
 #include <stdio.h>
 
-phonebook::phonebook( void )
+phonebook::phonebook(void)
 {
     _total = -1;
 }
@@ -41,7 +41,7 @@ void phonebook::search()
         std::cout << "No contacts in the phonebook" << std::endl;
         return;
     }
-    
+
     search_prompt();
     for (int n = 0; n <= _total; n++)
     {
@@ -51,10 +51,11 @@ void phonebook::search()
         _list[n].easy_print();
     }
     std::cout << "Enter index of person you would like to see\n:: ";
-    while (true)
+    while (!std::cin.eof())
     {
         getline(std::cin, tmp);
-        try {
+        try
+        {
             index = (int)std::stoi(tmp);
         }
         catch (...)
@@ -64,9 +65,9 @@ void phonebook::search()
         if (index >= 0 && index <= _total)
         {
             _list[index].full_print();
-            return ;
+            return;
         }
         else
             std::cout << "invalid index, Try again\n:: ";
-    }
+        }
 }
