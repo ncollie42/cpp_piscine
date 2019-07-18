@@ -8,7 +8,7 @@ NAME = Human
 all: $(NAME)
 
 $(NAME): $(FILES)
-	$(CC) $(FILES) -o $@ 
+	$(CC) $(FILES) -o $@ $(FLAGS)
 
 clean:
 	rm $(NAME)
