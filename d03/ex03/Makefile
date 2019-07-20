@@ -2,7 +2,9 @@ CC = g++
 FILES = main.cpp \
 FragTrap.cpp \
 ScavTrap.cpp \
-ClapTrap.cpp
+ClapTrap.cpp \
+NinjaTrap.cpp
+
 NAME = game
 FLAGS = -Wall -Werror -Wextra
 

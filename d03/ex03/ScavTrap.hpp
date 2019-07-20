@@ -16,17 +16,17 @@ class ScavTrap : public ClapTrap{
         void meleeAttack(ScavTrap & target) const;
        
         void challengeNewcomer(ScavTrap & target);
+        int _hp;
+        std::string _name;
     private:
 
         unsigned int challengeNewcomer(std::string const & target) const;
         unsigned int rangedAttack(std::string const & target) const;
         unsigned int meleeAttack(std::string const & target) const;
         int _max_hp;
-        int _hp;
         int _energy;
         int _max_energy;
         int _level;
-        std::string _name;
         int _mele_damage;
         int _range_damage;
         int _damage_redunction;

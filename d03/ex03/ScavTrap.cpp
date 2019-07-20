@@ -1,14 +1,14 @@
 #include "ScavTrap.hpp"
 #include <iostream>
 
-ScavTrap::ScavTrap ( void ) :_max_hp(100), _hp(100), _energy(50), _max_energy(50),
-	_level(1), _name("ScavTrap"), _mele_damage(20), _range_damage(15), _damage_redunction(3)
+ScavTrap::ScavTrap ( void ) : _hp(100), _name("ScavTrap"), _max_hp(100),_energy(50), _max_energy(50),
+	_level(1), _mele_damage(20), _range_damage(15), _damage_redunction(3)
 {
     std::cout << _name << " is a new ScavTrap unit!" << std::endl;
 }
 
-ScavTrap::ScavTrap ( std::string name ) :_max_hp(100), _hp(100), _energy(50), _max_energy(50),
-	_level(1), _name(name), _mele_damage(20), _range_damage(15), _damage_redunction(3)
+ScavTrap::ScavTrap ( std::string name ) : _hp(100), _name(name), _max_hp(100),_energy(50), _max_energy(50),
+	_level(1), _mele_damage(20), _range_damage(15), _damage_redunction(3)
 {
    std::cout << _name << " is a new ScavTrap unit." << std::endl;
 }

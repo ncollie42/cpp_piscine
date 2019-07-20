@@ -1,14 +1,14 @@
 #include "FragTrap.hpp"
 #include <iostream>
 
-FragTrap::FragTrap ( void ) :_max_hp(100), _hp(100), _energy(100), _max_energy(100),
-	_level(1), _name("FragTrap"), _mele_damage(30), _range_damage(20), _damage_redunction(5)
+FragTrap::FragTrap ( void ) : _hp(100), _name("FragTrap"), _max_hp(100), _energy(100), _max_energy(100),
+	_level(1), _mele_damage(30), _range_damage(20), _damage_redunction(5)
 {
     std::cout << _name << " is born!" << std::endl;
 }
 
-FragTrap::FragTrap ( std::string name ) :_max_hp(100), _hp(100), _energy(100), _max_energy(100),
-	_level(1), _name(name), _mele_damage(30), _range_damage(20), _damage_redunction(5)
+FragTrap::FragTrap ( std::string name ) : _hp(100), _name(name), _max_hp(100), _energy(100), _max_energy(100),
+	_level(1), _mele_damage(30), _range_damage(20), _damage_redunction(5)
 {
    std::cout << _name << " is born!" << std::endl;
 }
