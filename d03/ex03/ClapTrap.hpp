@@ -17,11 +17,6 @@ class ClapTrap{
         void beRepaired(unsigned int amount);
         int _hp;
         std::string _name;
-    private:
-
-        unsigned int challengeNewcomer(std::string const & target) const;
-        unsigned int rangedAttack(std::string const & target) const;
-        unsigned int meleeAttack(std::string const & target) const;
         int _max_hp;
         int _energy;
         int _max_energy;
@@ -29,6 +24,11 @@ class ClapTrap{
         int _mele_damage;
         int _range_damage;
         int _damage_redunction;
+    private:
+
+        unsigned int challengeNewcomer(std::string const & target) const;
+        unsigned int rangedAttack(std::string const & target) const;
+        unsigned int meleeAttack(std::string const & target) const;
 };
 
 #endif
