@@ -21,11 +21,14 @@ int main(void)
 {
     int     list1[8] = {1, 3 ,5 ,6 ,7, 2, 4, 21};
     char     list2[8] = {'1', 'A' ,'A' ,'W', 'Q', 'B', 'T', '*'};
+    std::string     list3[8] = {"'1'", "'A'" ,"'A'" ,"'W'", "'Q'", "'B'", "'T'", "'*'"};
 
 
     ::iter(list1, 8, ::print<int>);
     std::cout << "------------------" << std::endl;
     ::iter(list2, 8, ::print<char>);
+    std::cout << "------------------" << std::endl;
+    ::iter(list3, 8, ::print<std::string>);
 
 
 

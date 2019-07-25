@@ -4,7 +4,7 @@ FLAGS = -Wall -Werror -Wextra
 NAME = array
 all: $(NAME)
 
-$(NAME): $(FILE)
+$(NAME): $(FILE) Array.hpp
 	$(CC) $(FILE) $(FLAGS) -o $@
 clean:
 	rm $(NAME) 

@@ -10,6 +10,8 @@ int main(void)
     Array<int> tmp1;
     Array<float> tmp2(4);
     Array<char> tmp3(10);
+
+    Array<int> myArray = tmp0;
     Array<std::string> tmp5(10);
     tmp5[2] = "This";
     try
