@@ -48,10 +48,9 @@ Data* deserialize(void *raw)
 {
 	Data* new_data = new Data;
 	char* raw_data = reinterpret_cast<char*>(raw);
-
     new_data->s1 = std::string(raw_data, 8);
 	new_data->n = *reinterpret_cast<int*>(raw_data + 8);
 	new_data->s2 = std::string(raw_data + 8 + sizeof(int), 8);
-    // memmove(new_data, raw_data, (16 + sizeof(int)));
+	
 	return new_data;
 }
