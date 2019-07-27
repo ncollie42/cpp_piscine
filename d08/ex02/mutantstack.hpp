@@ -6,7 +6,7 @@
 /*   By: ncollie <ncollie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 17:20:54 by ncollie           #+#    #+#             */
-/*   Updated: 2019/07/25 21:12:19 by ncollie          ###   ########.fr       */
+/*   Updated: 2019/07/26 22:49:05 by ncollie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define MutantStack_HPP
 #include <stack>
 #include <iterator>
-// #include <deque>
+#include <deque>
 
 template <typename T>
 class MutantStack : public std::stack<T, std::deque<T> >
